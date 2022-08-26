@@ -1,7 +1,7 @@
 create database test;
 use test;
 CREATE TABLE Shots_DATA(Team CHAR(6), 
-					X DOUBLE, 
+		    X DOUBLE, 
                     Y DOUBLE, 
                     FGMade DOUBLE);
 SELECT TEAM, COUNT(X AND Y) AS SHOTS_ATTEMPTED, SUM(FGMADE) AS SHOTS_MADE, (SUM(FGMADE)/COUNT(X AND Y)) AS FGP, 
